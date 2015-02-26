@@ -1,0 +1,20 @@
+{
+    "name":             "crazefan/cfkg",
+    "description":      "Crowdfunding project for Kyrgyzstan",
+    "keywords":         ["crowdfunding", "Kyrgyzstan", "money", "website"],
+    "homepage":         "http://cf.kg/",
+    "time":             "2014-02-26",
+    "license":          "MIT",
+    "authors": [
+        {
+            "name":         "Timur Dolgopolov",
+            "email":        "dolgopolovt@gmail.com ",
+            "homepage":     "none",
+            "role":         "Genius"
+        }
+    ],
+    "minimum-stability":"dev",
+    "require": {
+        "php":">=5.4.0"
+    }
+}
