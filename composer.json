@@ -1,20 +1,36 @@
 {
-    "name":             "crazefan/cfkg",
-    "description":      "Crowdfunding project for Kyrgyzstan",
-    "keywords":         ["crowdfunding", "Kyrgyzstan", "money", "website"],
-    "homepage":         "http://cf.kg/",
-    "time":             "2014-02-26",
-    "license":          "MIT",
-    "authors": [
-        {
-            "name":         "Timur Dolgopolov",
-            "email":        "dolgopolovt@gmail.com ",
-            "homepage":     "none",
-            "role":         "Genius"
-        }
-    ],
-    "minimum-stability":"dev",
-    "require": {
-        "php":">=5.4.0"
-    }
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"require": {
+		"laravel/framework": "4.2.*"
+	},
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "stable"
 }

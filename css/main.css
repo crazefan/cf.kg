@@ -1,0 +1,116 @@
+.nav .container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav a {
+  color: #256c90;
+  font-size: 12px;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('/view/images/jumb-img.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0px;
+
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+}
+
+.jumbotron h1 {
+  color: #fff; //256c90
+  font-size: 64px;  
+  font-family: 'Open-Sans', sans-serif;
+  text-shadow: 0px 0px 22px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #8d8d8d;
+  font-weight: 100px;
+
+}
+
+
+.jumbotron a {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.myButton {
+  background-color:#44c767;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:22px;
+  padding:7px 24px;
+  text-decoration:none;
+  margin: 0 auto;
+}
+
+.myButton:hover {
+  background-color:#a1d982;
+  text-decoration: none;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #7198ac;
+}
+
+.neighborhood-guides {
+    background-color: #efefef;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.neighborhood-guides h2 {
+    color: #393c3d;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.neighborhood-guides p {
+    color: #949494;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
