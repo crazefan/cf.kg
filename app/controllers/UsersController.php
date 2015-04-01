@@ -44,7 +44,39 @@ class UsersController extends BaseController
 	    return $this->getMessage("Неверная ссылка на активацию аккаунта, либо учетная запись уже активирована.");
 	}
 
+	public function getLogin()
+	{
+		return View::make('users/login');
+	}
 
+	public function postLogin() {
+   
+    $creds = array(
+        'password' => Input::get('password'),
+        'isActive'  => 1,
+    );
+ 
+   
+    $username = Input::get('username');
+    if (strpos($username, '@')) {
+        $creds['email'] = $username;
+    } else {
+        $creds['username'] = $username;
+    }
+ 
+   
+    if (Auth::attempt($creds, Input::has('remember'))) {
+        Log::info("User [{$username}] successfully logged in.");
+        return Redirect::intended();
+    } else {
+        Log::info("User [{$username}] failed to login.");
+    }
+ 
+    $alert = "Неверная комбинация имени (email) и пароля, либо учетная запись еще не активирована.";
+ 
+   
+    return Redirect::back()->withAlert($alert);
+}
 
 }
 
