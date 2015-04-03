@@ -22,11 +22,19 @@
           <li role="presentation"><a href="http://cf.kg/public/">Explore</a></li>
           <li role="presentation" class="active"><a href="/public/projects/add">Start</a></li>
         </ul>
-        <ul class="nav nav-pills pull-right">
-          <li><a href="http://cf.kg/public/users/register">Register</a></li>
-          <li><a href="#">LogIn</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
+        @if (!Auth::check())
+          <ul class="nav nav-pills pull-right">
+            <li><a href="http://cf.kg/public/users/register">Register</a></li>
+            <li><a href="http://cf.kg/public/users/login">LogIn</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        @else
+          <ul class="nav nav-pills pull-right">
+           <li><a href="#"><strong>{{ Auth::user()->username }}</strong></a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="http://cf.kg/public/users/logout">Logout</a></li>
+          </ul>
+        @endif
       </div>
     </div>
 @yield('content')

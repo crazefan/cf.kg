@@ -5,7 +5,7 @@
 @stop
  
 @section('headExtra')
-    {{ HTML::style('css/signin.css') }}
+    {{ HTML::style('/css/signin.css') }}
 @stop
  
 @section('content')
@@ -25,8 +25,8 @@
         </label>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
  
-        <a href="/password/remind">Forgot password?</a><br />
-        <a href="/users/register">Registration</a>
+        <a href="/public/password/remind">Forgot password?</a><br />
+        <a href="/public/users/register">Registration</a>
     </form>
 </div>
 @stop
