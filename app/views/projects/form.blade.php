@@ -19,21 +19,12 @@
     </div>
 </div>
 
-
 <div class="form-group">
-    <label for="image" class="col-sm-2 control-label">Image</label>
-    <div class="col-sm-5">
-      {{ Form::file('image') }}
-    </div>
-</div>
-
-{{-- <div class="form-group">
     <label for="image" class="col-sm-2 control-label">Image</label>
     <div class="col-sm-5">
         {{ Form::text('image', null, array('class' => 'form-control')) }}
     </div>
-</div> --}}
-
+</div>
 <div class="form-group">
     <label for="comment" class="col-sm-2 control-label">Comment</label>
     <div class="col-sm-5">

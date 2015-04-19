@@ -8,8 +8,10 @@
 
     
     <link rel="stylesheet" href="/css/bootstrap.css">
-    @yield('headExtra')
     <link rel="stylesheet" href="/css/main.css">
+ 
+
+    @yield('headExtra')
 
   </head>
 
