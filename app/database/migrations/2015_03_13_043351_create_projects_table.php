@@ -41,8 +41,6 @@ class CreateProjectsTable extends Migration {
 
 			$table->string('country')->index();
 
-			$table->string('image')->index();
-
 			$table->text('comment');
 
 			$table->integer('duration');
