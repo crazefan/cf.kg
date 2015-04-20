@@ -20,6 +20,8 @@ class Project extends Eloquent {
 	    'other' => 'Other',
     );
 
+
+
 	  protected $fillable = array(
         'type',
         'title',
@@ -30,5 +32,10 @@ class Project extends Eloquent {
 		'goal',
 		'video',
     );
+
+	public function author()
+	{
+		return $this->belongsTo('User', 'user_id');
+	}
  
 }

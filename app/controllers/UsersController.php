@@ -22,14 +22,14 @@ class UsersController extends BaseController
 		$user->fill(Input::all());
 		$id = $user->register();
 
-		return $this->getMessage("Регистрация почти завершена. Вам необходимо подтвердить e-mail, указанный при регистрации, перейдя по ссылке в письме.");
+		return $this->getMessage("Registration is almost complete, check your email for the activation letter.");
 	}
 
 	public function getActivate($userId, $activationCode)
 	{
 		$user = User::find($userId);
 	    if (!$user) {
-	        return $this->getMessage("Неверная ссылка на активацию аккаунта.");
+	        return $this->getMessage("Incorrect activation link");
 	    }
 	 
 	    
@@ -37,11 +37,11 @@ class UsersController extends BaseController
 
 	        Auth::login($user);
 	        
-	        return $this->getMessage("Аккаунт активирован", "/");
+	        return $this->getMessage("Your account is activated. Welcome!", "/");
 	    }
 	 
 	   
-	    return $this->getMessage("Неверная ссылка на активацию аккаунта, либо учетная запись уже активирована.");
+	    return $this->getMessage("Incorrect activation link or accaunt is not activated");
 	}
 
 	public function getLogin()

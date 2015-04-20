@@ -1,13 +1,17 @@
-body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #eee;
-}
 
-.form-signin {
+
+.login-container
+{
   max-width: 330px;
   padding: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.form-signin {
+  width: 330px;
+  padding: 15px;
+  margin: 0 auto ;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -15,6 +19,7 @@ body {
 }
 .form-signin .checkbox {
   font-weight: normal;
+  margin-left: 21px;
 }
 .form-signin .form-control {
   position: relative;

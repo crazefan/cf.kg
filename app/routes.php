@@ -19,3 +19,4 @@ Route::get('/', array(
 Route::controller('projects', 'ProjectsController');
 Route::controller('users', 'UsersController');
 Route::controller('password', 'RemindersController');
+Route::controller('profile', 'ProfileController');

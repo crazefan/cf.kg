@@ -15,6 +15,7 @@ class CreateProjectsTable extends Migration {
 		Schema::create('projects', function(Blueprint $table)
 		{
 			$table->increments('id');
+
 			$table->timestamps();
 
 			$table->engine = 'MyISAM';
@@ -49,11 +50,15 @@ class CreateProjectsTable extends Migration {
 
 			$table->decimal('current');
 
+			$table->string('image');
+
 			$table->boolean('backed');
 
 			$table->string('video');
 
 			$table->integer('views')->unsigned();
+
+			$table->integer('user_id')->index()->unsigned();
 		});
 	}
 

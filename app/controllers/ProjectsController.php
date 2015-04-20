@@ -3,12 +3,28 @@
 class ProjectsController extends BaseController {
 
 	public function getAdd() {
-    	return View::make('projects/add');
+
+		if (Auth::check())
+		{
+    		return View::make('projects/add');
+    	}
+    	else
+    	{
+    		return View::make('users/register');
+    	}
+
 	}
 
 	public function postAdd()
 	{
-		$Project = Project::create(Input::all());
+		$data = Input::all();
+
+		if(Auth::check())
+		{
+			$data['user_id'] = Auth::user()->id;
+		}
+
+		$Project = Project::create($data);
 
 		if (Input::hasFile('image'))
 		{
@@ -19,7 +35,7 @@ class ProjectsController extends BaseController {
 
 		
 
-        return 'Project added, id: ' . $Project->id;
+        return 'Project added, id: ' . $Project->id; ////ПЕРЕДЕЛАТЬ ВЬЮ
 	}
 
 	public function getView($projectId) 

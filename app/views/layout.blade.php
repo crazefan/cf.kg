@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -6,10 +7,10 @@
     <title>@yield('title') - cf.kg</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-    
-    <link rel="stylesheet" href="/css/bootstrap.css">
+ 
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/main.css">
     @yield('headExtra')
-    <link rel="stylesheet" href="/css/main.css">
 
   </head>
 

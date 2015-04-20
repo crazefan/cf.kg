@@ -9,7 +9,7 @@
 @stop
  
 @section('content')
-<div class="container">
+<div class="login-container">
     @if (Session::has('alert'))
         <div class="alert alert-danger">
             <p>{{ Session::get('alert') }}
