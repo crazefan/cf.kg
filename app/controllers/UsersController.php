@@ -31,7 +31,7 @@ class UsersController extends BaseController
 	    if (!$user) {
 	        return $this->getMessage("Incorrect activation link");
 	    }
-	 
+	 	
 	    
 	    if ($user->activate($activationCode)) {
 

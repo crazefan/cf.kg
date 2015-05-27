@@ -1,6 +1,33 @@
+* {
+  border-radius: 0 !important;
+}
+
+
+
 .nav .container {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 6px;
+  padding-bottom: 3px;
+
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+  background-color: #94D79F;
+  color: #ffffff;
+}
+
+.navbar
+{
+  height: 52px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ffffff;
+  margin-bottom: 0px;
+
+}
+
+.navbar-brand
+{
+  padding: 12px 30px;
 }
 
 .nav a {
@@ -11,6 +38,12 @@
 }
 
 .nav li {
+  display: inline;
+
+}
+
+.nav .logo
+{
   display: inline;
 }
 
@@ -62,6 +95,22 @@
   margin: 0 auto;
 }
 
+.myButtonDonate {
+  background-color:#a7d39e;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:22px;
+  padding:7px 24px;
+  text-decoration:none;
+  margin: 15px 15px auto auto;
+}
+
+.myButtonDonate:hover {
+  background-color:#a1d982;
+  text-decoration: none;
+}
+
 .myButton:hover {
   background-color:#a1d982;
   text-decoration: none;
@@ -103,7 +152,42 @@
 }
 
 
+.centertitle
+{
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #efefef;
+  line-height: 90px;
+  
+}
 
+.centertitle h1
+{
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: normal;
+  font-size: 25px; 
+  vertical-align: middle;
+  display: inline-block;
+  line-height: normal;
+
+}
+
+.container-top
+{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.container-top h1
+{
+  color: #7BE513;
+}
+
+.form-control:focus {
+  border-color: #a2a2a2;
+  box-shadow: inset 0 1px 1px rgba(154, 154, 154, 0.075), 0 0 8px rgba(154, 154, 154, 0.6);
+}
 
 
 

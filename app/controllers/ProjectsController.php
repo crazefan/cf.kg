@@ -33,9 +33,8 @@ class ProjectsController extends BaseController {
 		    $file->move("uploads/$folderid/", $name="projectImg.jpeg");
 		}
 
-		
-
         return 'Project added, id: ' . $Project->id; ////ПЕРЕДЕЛАТЬ ВЬЮ
+       	
 	}
 
 	public function getView($projectId) 

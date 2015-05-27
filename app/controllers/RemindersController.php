@@ -17,7 +17,7 @@ class RemindersController extends Controller {
 	public function postRemind()
 	{
 		switch ($response = Password::remind(Input::only('email'), function($message) {
-            $message->subject('Восстановление пароля на сайте SBShare');
+            $message->subject('Akstart password recovery');
         }))
 		{
 			case Password::INVALID_USER:
